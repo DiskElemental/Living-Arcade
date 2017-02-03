@@ -1,0 +1,293 @@
+{
+    "Score": 0,
+    "ID": 74013446326894615944868234342309438376,
+    "NumActionButtons": 2,
+    "Player": [
+        {
+            "Right": [
+                "Self.Destroy()"
+            ],
+            "Opacity": 92.51428094159829,
+            "CollisionReactions": [
+                [
+                    "triangle453",
+                    [
+                        "Game.Score += 2"
+                    ]
+                ],
+                [
+                    "circle841",
+                    [
+                        "Self.Destroy()"
+                    ]
+                ],
+                [
+                    "cross819",
+                    [
+                        "Game.Score += 2"
+                    ]
+                ],
+                [
+                    "cross820",
+                    [
+                        "Self.Destroy()"
+                    ]
+                ]
+            ],
+            "A3": null,
+            "Up": null,
+            "Down": [
+                "Game.Score += 2"
+            ],
+            "A2": null,
+            "Shape": "square",
+            "Color": 191,
+            "A4": null,
+            "Name": "square191",
+            "Left": null,
+            "HP": 1,
+            "A1": null
+        },
+        [
+            10.739025787611943,
+            61.83148972404901
+        ]
+    ],
+    "OffScreenEffect": null,
+    "objList": [
+        [
+            {
+                "Right": null,
+                "Opacity": 93.75794408498011,
+                "CollisionReactions": [
+                    [
+                        "circle841",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": null,
+                "Down": null,
+                "A2": null,
+                "Shape": "cross",
+                "Color": 820,
+                "A4": [
+                    "Game.Score += 6"
+                ],
+                "Name": "cross820",
+                "Left": null,
+                "HP": 1,
+                "A1": [
+                    "Self.Destroy()"
+                ]
+            },
+            [
+                47.741074779996495,
+                82.13431880534937
+            ]
+        ],
+        [
+            {
+                "Right": null,
+                "Opacity": 53.494351297881124,
+                "CollisionReactions": [
+                    [
+                        "cross26",
+                        [
+                            "Game.Score += 10"
+                        ]
+                    ],
+                    [
+                        "cross26",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": [
+                    "Self.Destroy()"
+                ],
+                "Down": [
+                    "Game.Score += 10"
+                ],
+                "A2": null,
+                "Shape": "cross",
+                "Color": 819,
+                "A4": null,
+                "Name": "cross819",
+                "Left": null,
+                "HP": 1,
+                "A1": null
+            },
+            [
+                66.49721580582839,
+                52.911389144767696
+            ]
+        ],
+        [
+            {
+                "Right": [
+                    "Self.Destroy()"
+                ],
+                "Opacity": 57.130248769305794,
+                "CollisionReactions": [
+                    [
+                        "cross26",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": null,
+                "Down": null,
+                "A2": null,
+                "Shape": "circle",
+                "Color": 841,
+                "A4": [
+                    "Self.Destroy()"
+                ],
+                "Name": "circle841",
+                "Left": null,
+                "HP": 1,
+                "A1": null
+            },
+            [
+                74.67818451847941,
+                30.217752030912248
+            ]
+        ],
+        [
+            {
+                "Right": null,
+                "Opacity": 2.699531441747338,
+                "CollisionReactions": [
+                    [
+                        "cross26",
+                        [
+                            "Game.Score += 10"
+                        ]
+                    ],
+                    [
+                        "circle841",
+                        [
+                            "Game.Score += 10"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": [
+                    "Self.Destroy()"
+                ],
+                "Down": null,
+                "A2": null,
+                "Shape": "triangle",
+                "Color": 453,
+                "A4": null,
+                "Name": "triangle453",
+                "Left": null,
+                "HP": 1,
+                "A1": [
+                    "Game.Score += 10"
+                ]
+            },
+            [
+                39.14664774637264,
+                27.42706959523713
+            ]
+        ],
+        [
+            {
+                "Right": [
+                    "Self.Destroy()"
+                ],
+                "Opacity": 81.21669327693944,
+                "CollisionReactions": [
+                    [
+                        "circle841",
+                        [
+                            "Game.Score += 9"
+                        ]
+                    ],
+                    [
+                        "cross26",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": [
+                    "Game.Score += 9"
+                ],
+                "Down": null,
+                "A2": null,
+                "Shape": "cross",
+                "Color": 26,
+                "A4": null,
+                "Name": "cross26",
+                "Left": null,
+                "HP": 1,
+                "A1": null
+            },
+            [
+                67.56306385848707,
+                60.497748959362184
+            ]
+        ],
+        [
+            {
+                "Right": [
+                    "Self.Destroy()"
+                ],
+                "Opacity": 92.51428094159829,
+                "CollisionReactions": [
+                    [
+                        "triangle453",
+                        [
+                            "Game.Score += 2"
+                        ]
+                    ],
+                    [
+                        "circle841",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ],
+                    [
+                        "cross819",
+                        [
+                            "Game.Score += 2"
+                        ]
+                    ],
+                    [
+                        "cross820",
+                        [
+                            "Self.Destroy()"
+                        ]
+                    ]
+                ],
+                "A3": null,
+                "Up": null,
+                "Down": [
+                    "Game.Score += 2"
+                ],
+                "A2": null,
+                "Shape": "square",
+                "Color": 191,
+                "A4": null,
+                "Name": "square191",
+                "Left": null,
+                "HP": 1,
+                "A1": null
+            },
+            [
+                10.739025787611943,
+                61.83148972404901
+            ]
+        ]
+    ]
+}

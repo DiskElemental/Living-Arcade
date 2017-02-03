@@ -14,18 +14,14 @@ class Game(object):
         self.NumActionButtons = NumActionButtons
         self.Score = Score
 
-
     #We don't pass individual objects into the Game
     #We define rules for entire classes of objects, as shown below
-    #C = [Number_of_Circles, GameObject_Representing_Circles, [locations_of_circles]]
+    #Tmp = [GameObject, (locations_of_object)]
     #This allows us to tweak individual object spawn rates
     #And ensures all objects sharing a sprite have consistent properties.
-    def SetObjectLogs(self, C, S, T, X, Player):
-        self.C = C  #Circles
-        self.S = S  #Squares
-        self.T = T  #Triangles
-        self.X = X  #Crosses
-        self.Player = Player    #Player
+    def SetObjectLogs(self, objList):
+        self.objList = objList
+        self.Player = objList[-1]    #Player
 
     def SetFitness(self,fitness):
         self.Fitness = fitness
@@ -43,13 +39,7 @@ class GameObject(object):
     A2 = []
     A3 = []
     A4 = []
-
-    #All Collisions saved as variables with an empty action set
-    Col_C = [] #Collision with Circles
-    Col_S = [] #Collision with Squares
-    Col_T = [] #etc.
-    Col_X = []
-    Col_P = []
+    CollisionReactions = []
 
     def __init__(self, Name, HP, Shape, Color, Opacity, NumActionButtons):
         self.Name = Name
@@ -58,7 +48,7 @@ class GameObject(object):
         self.Color = Color
         self.Opacity = Opacity
 
-    def GenerateReactions(self, NumAct):
+    def GenerateReactions(self, NumAct, objList):
         #List of all buttons
         #ButtonValues = [Up, Left, Down, Right, A1, A2, A3, A4]
         ButtonReactions = [None, None, None, None, None, None, None, None]
@@ -79,21 +69,18 @@ class GameObject(object):
 
         self.Up, self.Left, self.Down, self.Right, self.A1, self.A2, self.A3, self.A4 = ButtonReactions
 
-
-        #CollisionReactions = [Col_C, Col_S, Col_T, Col_X, Col_P]
-        CollisionReactions = [[], [], [], [], []]
         #total number of reactions in range [1, 8]
         i = random.randint(1,8)
 
         #Picks a random Collision Type and a Random action
         #Then adds the action to the collision's action set
         #There may be some actions without a reaction, and some with multiple reactions
+        tmp = []
         for j in range(i):
-            k = random.randint(0,len(CollisionReactions)-1)
-            j = random.choice(ActionSet)
-            CollisionReactions[k] += j
-
-        self.Col_C, self.Col_S, self.Col_T, self.Col_X, self.Col_P = CollisionReactions
+            k = random.choice(objList)[0].Name
+            l = random.choice(ActionSet)
+            tmp.append((k,l))
+        self.CollisionReactions = tmp
 
     def SetFitness(self, fitness):
         self.Fitness = fitness
